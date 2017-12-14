@@ -3,5 +3,4 @@ owners:
 - name: Appscode
   email: team@appscode.com
 dependencies:
-- package: github.com/kubepack/kube-d
-  branch: dep-c
+  

@@ -6,17 +6,17 @@ spec:
   replicas: 1
   template:
     metadata:
-      annotations:
-        app: nginx1
+      name: nginx
       labels:
         app: nginx
-      name: nginx
+      annotations:
+        app: nginx
     spec:
       containers:
-      - image: nginx
-        name: nginx
+      - name: nginx
+        image: nginx
         ports:
         - containerPort: 80
         resources:
           limits:
-            cpu: 10m
+            cpu: '10m'
